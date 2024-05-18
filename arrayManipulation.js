@@ -1,5 +1,5 @@
 function processArray(newArray){
-    finalArray = [];
+    let finalArray = [];
     for (let x = 0; x < newArray.length; x++){
         if (newArray[x] % 2 === 0){
             finalArray.push(newArray[x] * newArray[x]);
@@ -23,4 +23,13 @@ function formatArrayStrings(stringArray, numberArray){
             stringArray[x] = stringArray[x].toLowerCase();
         }
     }
+    return stringArray;
 }
+
+
+const inputArray = [1, 2, 3, 4, 5];
+
+const stringsArray = ["Tim", "John", "Paul", "David", "Jake"];
+const initialArray = formatArrayStrings(stringsArray, inputArray);
+
+export { initialArray };
