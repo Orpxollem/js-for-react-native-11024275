@@ -8,5 +8,19 @@ function processArray(newArray){
             finalArray.push(newArray[x] * 3);
         }
     }
-    return finalArray; 
+    return finalArray;
+}
+
+function formatArrayStrings(stringArray, numberArray){
+    stringArray = stringArray;
+    numberArray = processArray(numberArray);
+
+    for (let x = 0; x < stringArray.length; x++){
+        if (numberArray[x] % 2 === 0){
+            stringArray[x] = stringArray[x].toUpperCase();
+        }
+        else{
+            stringArray[x] = stringArray[x].toLowerCase();
+        }
+    }
 }
